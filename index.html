@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOF – Dive of Five</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #001f3f, #003366);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+    }
+    .logo {
+      width: 120px;
+      height: auto;
+    }
+    .uboot-logo {
+      position: relative;
+      width: 100px;
+      animation: glide 5s infinite alternate ease-in-out;
+    }
+    @keyframes glide {
+      from { left: -100px; }
+      to { left: calc(100vw - 120px); }
+    }
+    h1 {
+      text-align: center;
+      margin-top: 2em;
+      font-size: 3em;
+    }
+    .content {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      margin: 2em 0;
+    }
+    .buttons a {
+      background: #007aff;
+      padding: 1em 2em;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 2em;
+      background-color: rgba(255,255,255,0.05);
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      .buttons { flex-direction: column; gap: 1em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo1.png" alt="Logo" class="logo" />
+    <img src="logo2.png" alt="Logo" class="logo" />
+  </header>
+
+  <div class="uboot-logo">
+    <img src="uboot.png" alt="U-Boot" width="100" />
+  </div>
+
+  <h1>Dive of Five – Das ultimative U-Boot-Game!</h1>
+
+  <div class="content">
+    <h2>Datenschutzrichtlinie</h2>
+    <p>Wir respektieren deine Privatsphäre. Das Spiel verwendet AdMob zur Anzeige von Werbung. AdMob kann bestimmte Gerätedaten erfassen, um personalisierte Anzeigen zu liefern. Wir sammeln selbst keine personenbezogenen Daten.</p>
+    <p>Du kannst jederzeit in den App-Einstellungen deine Zustimmung zur personalisierten Werbung ändern.</p>
+  </div>
+
+  <div class="buttons">
+    <a href="https://play.google.com/store/apps/details?id=deine.app.id" target="_blank">Google Play</a>
+    <a href="https://apps.apple.com/app/id1234567890" target="_blank">App Store</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Dive of Five | <a href="mailto:kontakt@dofgame.com" style="color:lightblue;">Kontakt</a></p>
+  </footer>
+</body>
+</html>
